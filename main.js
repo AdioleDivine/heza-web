@@ -319,7 +319,7 @@ Submitted from hezacoordination.com`;
     ────────────────────────────────────────── */
     const io = new IntersectionObserver(entries => {
       entries.forEach(en => { if (en.isIntersecting) en.target.classList.add('visible'); });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.01, rootMargin: '0px 0px -60px 0px' });
     document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
 
 
