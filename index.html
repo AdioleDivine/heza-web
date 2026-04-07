@@ -42,6 +42,12 @@
     .slide-3 { background-image:url('images/img3.jpg'); }
     .slide-4 { background-image:url('images/img4.jpg'); }
     .slide-5 { background-image:url('images/img5.jpg'); }
+
+    /* Mobile carousel adjustments */
+    @media(max-width:768px) {
+      .carousel-slide { background-size: auto 100%; background-repeat: no-repeat; background-position: center; }
+    }
+
     /* About */
     .about { background:#f8f9fc; padding:100px 0; }
     .about-content { max-width:100%; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
@@ -390,7 +396,7 @@
               <span></span>
               <span class="quiz-step-counter">Step 1 of 3</span>
               <a href="diagnostic.html" class="quiz-diagnostic-btn" title="Take comprehensive transition readiness assessment">
-                <i class="fas fa-chart-pie"></i> Take Full Assessment
+                <i class="fas fa-chart-pie"></i> Take Free Assessment
               </a>
             </div>
           </div>
@@ -408,7 +414,7 @@
               <button class="quiz-back" id="quizBack2">← Back</button>
               <span class="quiz-step-counter">Step 2 of 3</span>
               <a href="diagnostic.html" class="quiz-diagnostic-btn" title="Take comprehensive transition readiness assessment">
-                <i class="fas fa-chart-pie"></i> Take Full Assessment
+                <i class="fas fa-chart-pie"></i> Take Free Assessment
               </a>
             </div>
           </div>
@@ -425,7 +431,7 @@
               <button class="quiz-back" id="quizBack3">← Back</button>
               <span class="quiz-step-counter">Step 3 of 3</span>
               <a href="diagnostic.html" class="quiz-diagnostic-btn" title="Take comprehensive transition readiness assessment">
-                <i class="fas fa-chart-pie"></i> Take Full Assessment
+                <i class="fas fa-chart-pie"></i> Take Free Assessment
               </a>
             </div>
           </div>
@@ -441,7 +447,7 @@
                 <i class="fas fa-calendar-check"></i> Book This Service
               </a>
               <a href="diagnostic.html" class="btn-result-primary" style="background:linear-gradient(135deg,#3a7bd5,#5b96f7); text-decoration:none; display:inline-flex; align-items:center; gap:8px; margin-left:8px;">
-                <i class="fas fa-chart-pie"></i> Take Full Assessment
+                <i class="fas fa-chart-pie"></i> Take Free Assessment
               </a>
               <button class="btn-result-ghost" id="quizRetake">Try Again</button>
             </div>

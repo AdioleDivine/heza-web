@@ -352,7 +352,7 @@ Submitted from hezacoordination.com`;
         slides[cur].classList.add('active');
         cdots[cur]?.classList.add('active');
       };
-      const start  = () => { timer = setInterval(() => goTo(cur + 1), 650000); };
+      const start  = () => { timer = setInterval(() => goTo(cur + 1), 5000); };
       const reset  = () => { clearInterval(timer); start(); };
 
       document.querySelector('.carousel-prev')?.addEventListener('click', () => { goTo(cur - 1); reset(); });
